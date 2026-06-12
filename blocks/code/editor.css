@@ -1,0 +1,22 @@
+.ccb-code-editor-shell .components-base-control {
+	margin-bottom: 1rem;
+}
+
+.ccb-code-editor-shell textarea {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.ccb-code-editor-preview-label {
+	font-weight: 600;
+	margin: 1rem 0 0.35rem;
+}
+
+.ccb-code-editor-shell .mcb-code-block,
+.ccb-code-editor-shell .ccb-code-block {
+	margin-top: 0;
+}
+
+.ccb-code-editor-shell .ccb-code-copy-button[disabled] {
+	cursor: default;
+	opacity: 0.7;
+}

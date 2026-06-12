@@ -1,0 +1,5 @@
+<?php
+return array(
+	'dependencies' => array( 'wp-blocks', 'wp-element', 'wp-i18n', 'wp-components', 'wp-block-editor', 'ccb-code-renderer' ),
+	'version'      => '1.0.0',
+);

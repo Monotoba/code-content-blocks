@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "mcb/code",
+  "version": "1.0.0",
+  "title": "Code Block",
+  "category": "text",
+  "icon": "editor-code",
+  "description": "Syntax-highlighted code block with legacy and modern language support.",
+  "keywords": ["code", "syntax", "highlight", "programming"],
+  "textdomain": "code-content-blocks",
+  "attributes": {
+    "source": { "type": "string", "default": "" },
+    "language": { "type": "string", "default": "plaintext" },
+    "theme": { "type": "string", "default": "system" },
+    "caption": { "type": "string", "default": "" },
+    "showLanguage": { "type": "boolean", "default": true },
+    "showLineNumbers": { "type": "boolean", "default": false },
+    "showCopyButton": { "type": "boolean", "default": true },
+    "wrapLines": { "type": "boolean", "default": false },
+    "highlightLines": { "type": "string", "default": "" }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "ccb-code-editor",
+  "style": "ccb-code-style",
+  "editorStyle": "ccb-code-editor-style",
+  "script": "ccb-code-renderer"
+}
