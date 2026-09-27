@@ -6,8 +6,8 @@
  * Requires at least: 6.3
  * Requires PHP: 7.4
  * Author: Randall Morgan / ChatGPT
- * License: MIT
- * License URI: https://opensource.org/licenses/MIT
+ * License: BSD-2-Clause
+ * License URI: https://opensource.org/license/bsd-2-clause
  * Text Domain: code-content-blocks
  *
  * @package CodeContentBlocks

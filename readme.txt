@@ -4,8 +4,8 @@ Tags: code, syntax highlighting, highlight.js, block, gutenberg
 Requires at least: 6.3
 Requires PHP: 7.4
 Stable tag: 1.0.0
-License: MIT
-License URI: https://opensource.org/licenses/MIT
+License: BSD-2-Clause
+License URI: https://opensource.org/license/bsd-2-clause
 
 Adds a syntax-highlighted Code block with light, dark, and system themes plus a broad language registry from legacy languages to current stacks.
 

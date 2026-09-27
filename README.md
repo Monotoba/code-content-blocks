@@ -1,7 +1,7 @@
 # Code Content Blocks
 
 [![Tests](https://github.com/Monotoba/code-content-blocks/actions/workflows/test.yml/badge.svg)](https://github.com/Monotoba/code-content-blocks/actions/workflows/test.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: BSD 2-Clause](https://img.shields.io/badge/License-BSD_2--Clause-blue.svg)](LICENSE)
 [![WordPress Plugin: Compatible with 6.3+](https://img.shields.io/badge/WordPress-6.3%2B-blue.svg)](https://wordpress.org)
 [![PHP: 7.4+](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://www.php.net)
 
@@ -189,7 +189,7 @@ This project follows [Semantic Versioning](https://semver.org/):
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE) – see the LICENSE file for details.
+This project is licensed under the [BSD 2-Clause License](LICENSE), which permits reuse and modification while requiring preservation of the copyright and license notices.
 
 ## Support
 
