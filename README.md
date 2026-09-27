@@ -149,6 +149,8 @@ Alternatively, bundle Highlight.js locally and modify the `ccb_register_block()`
 - Code is stored as-is in post content
 - Always keep WordPress and Highlight.js updated
 
+Please report suspected vulnerabilities privately according to the [security policy](SECURITY.md).
+
 ## Testing
 
 ### Running Tests Locally
@@ -167,6 +169,10 @@ This validates:
 ### Manual Testing
 
 See [tests/manual-test-plan.md](tests/manual-test-plan.md) for comprehensive testing procedures.
+
+## Contributing
+
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow, test requirements, coding expectations, and pull-request checklist.
 
 ## Requirements
 
@@ -190,6 +196,7 @@ This project is licensed under the [MIT License](LICENSE) – see the LICENSE fi
 For issues, feature requests, or questions:
 - Open an [issue on GitHub](https://github.com/Monotoba/code-content-blocks/issues)
 - Check [existing discussions](https://github.com/Monotoba/code-content-blocks/discussions)
+- Report vulnerabilities privately through the process in [SECURITY.md](SECURITY.md)
 
 ## Credits
 
