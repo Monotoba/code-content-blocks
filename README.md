@@ -187,6 +187,10 @@ This project follows [Semantic Versioning](https://semver.org/):
 - **MINOR** – Backward-compatible new features
 - **PATCH** – Bug fixes and security patches
 
+### Building an installable ZIP
+
+Run `python3 tools/build-release.py` from the repository root. The archive appears in `dist/` and contains one top-level `code-content-blocks/` directory ready for WordPress **Plugins > Add New > Upload Plugin**. The builder checks version alignment between the plugin header, PHP constant, block metadata, and WordPress readme. Run `python3 tests/test-package.py` to verify the package and reproducible output.
+
 ## License
 
 This project is licensed under the [BSD 2-Clause License](LICENSE), which permits reuse and modification while requiring preservation of the copyright and license notices.

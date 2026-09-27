@@ -39,3 +39,6 @@ jobs:
 
       - name: Validate license declarations
         run: bash tests/test-license.sh
+
+      - name: Validate release package
+        run: python3 tests/test-package.py
