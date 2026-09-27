@@ -1,7 +1,7 @@
 === Code Content Blocks ===
 Contributors: rmorgan62, chatgpt
 Tags: code, syntax highlighting, highlight.js, block, gutenberg
-Requires at least: 7.0
+Requires at least: 6.3
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: MIT

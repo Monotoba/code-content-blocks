@@ -33,3 +33,6 @@ jobs:
 
       - name: Validate documentation links
         run: bash tests/test-doc-links.sh
+
+      - name: Validate compatibility metadata
+        run: bash tests/test-compatibility.sh

@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/Monotoba/code-content-blocks/actions/workflows/test.yml/badge.svg)](https://github.com/Monotoba/code-content-blocks/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![WordPress Plugin: Compatible with 7.0+](https://img.shields.io/badge/WordPress-7.0%2B-blue.svg)](https://wordpress.org)
+[![WordPress Plugin: Compatible with 6.3+](https://img.shields.io/badge/WordPress-6.3%2B-blue.svg)](https://wordpress.org)
 [![PHP: 7.4+](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://www.php.net)
 
 A WordPress plugin that adds a syntax-highlighted Code block for displaying source code with comprehensive language support.
@@ -170,7 +170,7 @@ See [tests/manual-test-plan.md](tests/manual-test-plan.md) for comprehensive tes
 
 ## Requirements
 
-- **WordPress:** 7.0 or later
+- **WordPress:** 6.3 or later
 - **PHP:** 7.4 or later
 - **Browser:** Modern browser with ES6+ support
 

@@ -3,7 +3,7 @@
  * Plugin Name: Code Content Blocks
  * Description: Adds a syntax-highlighted Code block with light, dark, and system themes plus a broad language registry from legacy languages to current stacks.
  * Version: 1.0.0
- * Requires at least: 7.0
+ * Requires at least: 6.3
  * Requires PHP: 7.4
  * Author: Randall Morgan / ChatGPT
  * License: MIT
