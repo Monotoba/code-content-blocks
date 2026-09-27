@@ -1,12 +1,13 @@
 # Code Content Blocks
 
+[![Tests](https://github.com/Monotoba/code-content-blocks/actions/workflows/test.yml/badge.svg)](https://github.com/Monotoba/code-content-blocks/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![WordPress Plugin: Compatible with 7.0+](https://img.shields.io/badge/WordPress-7.0%2B-blue.svg)](https://wordpress.org)
 [![PHP: 7.4+](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://www.php.net)
 
 A WordPress plugin that adds a syntax-highlighted Code block for displaying source code with comprehensive language support.
 
-**Works standalone or as part of the cohesive trio:** [Markdown Importer](../markdown-importer-blocks/markdown-importer-blocks#readme) + **Code Content Blocks** + [Math Content Blocks](../math-content-blocks#readme). See [Mermaid Content Blocks](../mermaid-content-blocks#readme) for diagram support.
+**Works standalone or as part of the cohesive trio:** [Markdown Importer](https://github.com/Monotoba/markdown-importer-blocks) + **Code Content Blocks** + [Math Content Blocks](https://github.com/Monotoba/math-content-blocks). See [Mermaid Content Blocks](https://github.com/Monotoba/Mermaid-WP-Block) for diagram support.
 
 ## Features
 
@@ -100,7 +101,7 @@ Edit `includes/class-code-languages.php` to add new language definitions. If Hig
 
 ## Features When Used with Markdown Importer
 
-When activated alongside [Markdown Importer Blocks](../markdown-importer-blocks/markdown-importer-blocks#readme):
+When activated alongside [Markdown Importer Blocks](https://github.com/Monotoba/markdown-importer-blocks):
 
 - Fenced code blocks in Markdown automatically render with syntax highlighting
 - Global code theme setting applies to all code blocks in the Markdown
@@ -198,9 +199,9 @@ For issues, feature requests, or questions:
 
 ## Related Plugins
 
-- **[Markdown Importer Blocks](../markdown-importer-blocks/markdown-importer-blocks#readme)** – Import Markdown and delegate code/math/diagrams to specialized plugins
-- **[Math Content Blocks](../math-content-blocks#readme)** – Render mathematical formulas (TeX, AsciiMath, MathML)
-- **[Mermaid Content Blocks](../mermaid-content-blocks#readme)** – Create diagrams and flowcharts
+- **[Markdown Importer Blocks](https://github.com/Monotoba/markdown-importer-blocks)** – Import Markdown and delegate code/math/diagrams to specialized plugins
+- **[Math Content Blocks](https://github.com/Monotoba/math-content-blocks)** – Render mathematical formulas (TeX, AsciiMath, MathML)
+- **[Mermaid Content Blocks](https://github.com/Monotoba/Mermaid-WP-Block)** – Create diagrams and flowcharts
 
 Use all four plugins together for a complete content creation system, or use Code Content Blocks standalone.
 
