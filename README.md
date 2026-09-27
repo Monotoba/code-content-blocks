@@ -191,6 +191,8 @@ This project follows [Semantic Versioning](https://semver.org/):
 
 Run `python3 tools/build-release.py` from the repository root. The archive appears in `dist/` and contains one top-level `code-content-blocks/` directory ready for WordPress **Plugins > Add New > Upload Plugin**. The builder checks version alignment between the plugin header, PHP constant, block metadata, and WordPress readme. Run `python3 tests/test-package.py` to verify the package and reproducible output.
 
+A `vVERSION` tag matching those declarations triggers the release workflow. It runs the tests, validates the ZIP, and publishes the ZIP as a GitHub release asset. For example, version `1.0.0` uses tag `v1.0.0`.
+
 ## License
 
 This project is licensed under the [BSD 2-Clause License](LICENSE), which permits reuse and modification while requiring preservation of the copyright and license notices.

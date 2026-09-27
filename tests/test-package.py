@@ -35,6 +35,9 @@ class ReleasePackageTests(unittest.TestCase):
 
     def test_versions_agree(self):
         self.assertRegex(builder.release_version(), r"^\d+\.\d+\.\d+$")
+        self.assertEqual(builder.check_tag(f"v{builder.release_version()}"), builder.release_version())
+        with self.assertRaisesRegex(ValueError, "does not match"):
+            builder.check_tag("v9.9.9")
 
     def test_mismatched_version_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:

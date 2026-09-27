@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          coverage: none
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Validate tag and run tests
+        run: |
+          python3 tools/build-release.py --check-tag "$GITHUB_REF_NAME" --output "dist/code-content-blocks-${GITHUB_REF_NAME#v}.zip"
+          bash tools/smoke-test.sh
+          bash tests/test-doc-links.sh
+          bash tests/test-compatibility.sh
+          bash tests/test-license.sh
+          python3 tests/test-package.py
+          unzip -t "dist/code-content-blocks-${GITHUB_REF_NAME#v}.zip"
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" "dist/code-content-blocks-${GITHUB_REF_NAME#v}.zip" \
+            --verify-tag --title "Code Content Blocks $GITHUB_REF_NAME" --generate-notes

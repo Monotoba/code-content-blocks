@@ -60,10 +60,20 @@ def build(output):
     return version
 
 
+def check_tag(tag):
+    version = release_version()
+    if tag != f"v{version}":
+        raise ValueError(f"Release tag {tag!r} does not match plugin version v{version}")
+    return version
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, help="ZIP destination (default: dist/code-content-blocks-VERSION.zip)")
+    parser.add_argument("--check-tag", help="Require this Git tag to match every plugin version declaration")
     args = parser.parse_args()
+    if args.check_tag:
+        check_tag(args.check_tag)
     output = args.output or ROOT / "dist" / f"{PLUGIN}-{release_version()}.zip"
     version = build(output)
     print(f"Built {output} (v{version})")
