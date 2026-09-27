@@ -7,3 +7,4 @@ for js in assets/code-renderer.js blocks/code/editor.js; do
   node --check "$js"
   echo "JS OK: $js"
 done
+node tests/renderer.test.js
