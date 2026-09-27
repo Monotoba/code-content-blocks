@@ -39,5 +39,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" "dist/code-content-blocks-${GITHUB_REF_NAME#v}.zip" \
-            --verify-tag --title "Code Content Blocks $GITHUB_REF_NAME" --generate-notes
+          asset="dist/code-content-blocks-${GITHUB_REF_NAME#v}.zip"
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" "$asset" --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" "$asset" \
+              --verify-tag --title "Code Content Blocks $GITHUB_REF_NAME" --generate-notes
+          fi
